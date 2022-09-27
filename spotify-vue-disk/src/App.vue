@@ -1,24 +1,29 @@
 <template>
   <div id="app">
-    
+    <HeaderComponent />
+    <MainComponent />
   </div>
 </template>
 
 <script>
-//import component from 'path'
+import HeaderComponent from '@/components/HeaderComponent.vue'
+import MainComponent from '@/components/MainComponent.vue'
 
 export default {
   name: 'App',
-  components: {
-    
+  components:{
+    HeaderComponent,
+    MainComponent
   }
 }
 </script>
 
 <style lang="scss">
-  // import variables
-  
-#app {
-  
+@import '@/assets/styles/style.scss';
+
+body{
+  background-color: var(--spotify-body-main-color);
 }
+
+
 </style>
